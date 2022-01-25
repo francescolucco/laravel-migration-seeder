@@ -22,7 +22,6 @@ class CreateHolidaysTable extends Migration
             $table->string('city', 50);
             $table->string('state', 50);
             $table->tinyInteger('overnight_stays')->unsigned();
-            $table->date('departure_date');
             $table->decimal('price', 7, 2);
             $table->boolean('flight_included')->unsigned()->default(1);
             $table->boolean('insurance')->unsigned()->default(1);
