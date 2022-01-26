@@ -10,9 +10,6 @@ class PageController extends Controller
         return view('home');
     }
 
-    public function destinazioni(){
-        return view('destinazioni');
-    }
 
     public function servizi(){
         return view('servizi');

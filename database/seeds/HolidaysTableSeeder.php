@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use App\Holidays;
+use App\Holiday;
 use Illuminate\Database\Seeder;
 
 class HolidaysTableSeeder extends Seeder
@@ -15,7 +15,7 @@ class HolidaysTableSeeder extends Seeder
     {
         for($i=0; $i<100; $i++){
 
-            $new_holiday = new Holidays();
+            $new_holiday = new Holiday();
             $new_holiday->title= $faker->sentence(8);
             $new_holiday->description= $faker->paragraphs(3);
             $new_holiday->address= $faker->streetAddress();
